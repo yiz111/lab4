@@ -1,0 +1,232 @@
+bugs_day1 = int(input('Enter bugs collected on day 1: '))
+bugs_day2 = int(input('Enter bugs collected on day 2: '))
+bugs_day3 = int(input('Enter bugs collected on day 3: '))
+bugs_day4 = int(input('Enter bugs collected on day 4: '))
+bugs_day5 = int(input('Enter bugs collected on day 5: '))
+
+total_bugs = bugs_day1 + bugs_day2 + bugs_day3 + bugs_day4 + bugs_day5
+
+print(f'Total bugs collected: {total_bugs}')
+
+
+
+
+calories_per_minute = 4.2
+for minutes in [10, 15, 20, 25, 30]:
+    calories_burned = calories_per_minute * minutes
+    print(f'Calories burned after {minutes} minutes: {calories_burned}')
+
+
+
+
+budget = float(input('Enter your budget for the month: '))
+total_expenses = 0.0
+more_expenses = 'y'
+
+while more_expenses == 'y':
+    expense = float(input('Enter an expense: '))
+    total_expenses += expense
+    more_expenses = input('Do you have more expenses? (y/n): ').lower()
+
+if total_expenses > budget:
+    print(f'You are over budget by: ${total_expenses - budget:.2f}')
+else:
+    print(f'You are under budget by: ${budget - total_expenses:.2f}')
+
+
+
+
+
+speed = int(input('What is the speed of the vehicle in mph? '))
+
+hours = int(input('How many hours has it traveled? '))
+
+print('Hour\tDistance Traveled')
+print('--------------------------')
+
+for hour in range(1, hours + 1):
+    distance_traveled = speed * hour
+    print(f'{hour}\t{distance_traveled}')
+
+
+
+
+years = int(input('Enter the number of years: '))
+total_rainfall = 0
+total_months = 0
+
+for year in range(1, years + 1):
+    print(f'\nYear {year}')
+    for month in range(1, 13):
+        rainfall = float(input(f'Enter the rainfall for month {month}: '))
+        total_rainfall += rainfall
+        total_months += 1
+
+average_rainfall = total_rainfall / total_months
+
+print(f'\nTotal number of months: {total_months}')
+print(f'Total inches of rainfall: {total_rainfall:.2f}')
+print(f'Average rainfall per month: {average_rainfall:.2f} inches')
+
+
+
+
+
+
+print('Celsius\tFahrenheit')
+
+celsius = 0
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 1
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 2
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 3
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 4
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 5
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 6
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 7
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 8
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 9
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 10
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 11
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 12
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 13
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 14
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 15
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 16
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 17
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 18
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 19
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+celsius = 20
+fahrenheit = (9/5) * celsius + 32
+print(f'{celsius}\t{fahrenheit:.1f}')
+
+
+
+
+
+days = int(input('Enter the number of days: '))
+print('Day\tSalary (in dollars)')
+
+salary = 0.01
+total_pay = salary
+print(f'1\t{salary:.2f}')
+
+day = 2
+while day <= days:
+    salary *= 2
+    total_pay += salary
+    print(f'{day}\t{salary:.2f}')
+    day += 1
+
+print(f'\nTotal pay over {days} days: ${total_pay:.2f}')
+
+
+
+
+
+
+
+total_sum = 0
+number = float(input('Enter a positive number (or a negative number to stop): '))
+
+while number >= 0:
+    total_sum += number
+    number = float(input('Enter a positive number (or a negative number to stop): '))
+
+print(f'The total sum is: {total_sum}')
+
+
+
+
+rise_per_year = 1.6
+
+for year in range(1, 26):
+    total_rise = rise_per_year * year
+    print(f'Year {year}: {total_rise:.1f} mm')
+
+
+
+
+
+
+tuition = 8000
+increase_rate = 0.03
+
+year = 1
+tuition = tuition + (tuition * increase_rate)
+print(f'Year {year}: ${tuition:.2f}')
+
+year = 2
+tuition = tuition + (tuition * increase_rate)
+print(f'Year {year}: ${tuition:.2f}')
+
+year = 3
+tuition = tuition + (tuition * increase_rate)
+print(f'Year {year}: ${tuition:.2f}')
+
+year = 4
+tuition = tuition + (tuition * increase_rate)
+print(f'Year {year}: ${tuition:.2f}')
+
+year = 5
+tuition = tuition + (tuition * increase_rate)
+print(f'Year {year}: ${tuition:.2f}')
